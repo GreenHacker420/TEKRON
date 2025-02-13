@@ -10,6 +10,33 @@
 body {
     font-family: Arial, sans-serif;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, professional font */
+    background: linear-gradient(135deg, #0A2647, #2C3E50); /* Smooth gradient */
+    color: #FFFFFF; /* White text for contrast */
+    min-height: 100vh; /* Ensure full height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Optional: Add a very subtle animation to the gradient */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  body {
+    background-size: 200% 200%; /* Larger background size for animation */
+    animation: gradientShift 10s ease infinite; /* Smooth, slow animation */
+  }
 .navbar {
     display: flex;
     justify-content: center;
