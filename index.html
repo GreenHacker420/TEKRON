@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>TEKRON</title>
 </head>
 <body>
@@ -11,14 +13,23 @@
 
 
     <!-- NAV BAR -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+        <img id="logo1" src="./Images_and_posters/Logo_For_Website-01.png" alt="HashTech '25" height="50px">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+
+        <div class="nav-links">
+            <a class="link" href="index.html">HOME</a>
+            <a class="link" href="#heading">EVENTS</a>
+            <a class="link" href="sponsors.html">SPONSORS</a>
+            <a class="link" href="accomodation.html">ACCOMMODATION</a>
+            <img id="logo" src="./Images_and_posters/Logo_For_Website-01.png" alt="TEKRON" height="50px">
+            <a class="link" href="speakers.html">SPEAKERS</a>
+            <a class="link" href="agenda.html">AGENDA</a>
+            <a class="link" href="contact.html">CONTACT</a>
+            <a class="link" href="register.html">REGISTER</a>
+        </div>
     </nav>
 
 
