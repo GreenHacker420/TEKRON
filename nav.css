@@ -5,7 +5,7 @@ nav {
     align-items: center;
     padding: 10px 20px;
     font-family: 'axiforma', sans-serif;
-    background-color: rgba(0, 0, 0, 0.539);
+    background-color: transparent;
 }
 #menu-toggle{
     display: none;
@@ -22,7 +22,7 @@ nav {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: black;
     margin-left:auto;
 }
 
@@ -37,7 +37,7 @@ nav {
 
 .link {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 500;
     padding: 10px;
     margin-top: 7px;
@@ -54,7 +54,7 @@ nav {
     left: 50%;
     width: 0;
     height: 2px;
-    background: rgb(255, 255, 255);
+    background: black;
     transition: all 0.3s ease-in-out;
     transform: translateX(-50%);
 }
