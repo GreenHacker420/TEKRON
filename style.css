@@ -8,6 +8,11 @@
     src: url(fonts/Orbitron-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family:clock;
+    src: url(fonts/digital-7.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -90,10 +95,12 @@
 
 /* CSS FOR COUNTDOWN IN LANDING PAGE */
 .countdown {
-    font-size: 5rem;
+    font-size: 6rem;
+    letter-spacing: 15px;
     font-weight: bold;
     color: #333;
     margin-top: 5rem;
+    font-family: clock;
 }
 
 
