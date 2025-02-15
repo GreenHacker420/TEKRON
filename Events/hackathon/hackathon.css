@@ -1,0 +1,19 @@
+html{
+    background-image: url(../background.png);
+    background-attachment: fixed;
+}
+*{
+    background-color: whitesmoke;
+    background: transparent;
+}
+
+body{
+    width: 60% !important; 
+    margin: auto;
+    padding: 20px;
+}
+
+
+li{
+    font-size: 20px;
+}
