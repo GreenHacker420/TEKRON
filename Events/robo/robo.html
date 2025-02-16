@@ -5,51 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./robo.css">
     <title>ROBO_SOCCER</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <h1>Robo Soccer</h1>
     <div class="poster">
-        <img>
+        <img src="./Robo Soccer Tournament Poster.webp">
     </div>
-    
-    <!-- <h3>desctiptipn</h3> -->
-    
+
+
+    <button class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+        Register
+    </button>
+
+
     <section id="rules">
         <h1>RULE BOOK</h1>
         <br>
-        <h2>Match durations vary:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Match durations vary:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li>Knocks: 2 minutes per half</li>
             <li>Quarter and Semi-finals: 3.5 minutes per half with a 3-minute break in between</li>
             <li>Final: 9 minutes per half with a 5-minute break in between.</li>
         </ul>
-        <ul>
+        <ul class="list-disc pl-5 text-lg">
             <li>f a bot remains inactive for 50 seconds, the match is decided in favor of the active team.</li>
             <li>If both bots get stuck with each other or the ball gets stuck between them, the ball is returned to the center, and both bots return to their goalposts.</li>
         </ul>
 
-        <h2>Judgements:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Judgements:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li>The team with highest number of goals wins the game.</li>
             <li>In case of a draw, a tie-breaker round of 2 minutes per half is played.</li>
             <li>If the tie-breaker also ends in a tie, the winner is determined by the team with the Fewest fouls. If fouls are equal, the tie-breaker continues.</li>
         </ul>
 
-        <h2>Bot Specifications</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Bot Specifications</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li><b>Weight capping:</b>Weight capping: 0.5 Kg - 5Kg</li>
             <li><b>Dimensions (length x breadth x height): </b>10cm X 15cm X 10cm - 30cm x 30 cm x 30 cm</li>
             <li>Both wired and wireless bots are allowed, but if wired the wire’s length can’t be more than 1.3 times of the arena's diagonal’s dimension.</li>
             <li>+- 5% of every measurement would be acceptable.</li>
         </ul>
 
-        <h2>Arena Specifications:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Arena Specifications:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li>Dimensions (length x breadth): 6ft X 4ft</li>
         </ul>
 
-        <h2>Important Guidelines:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Important Guidelines:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li><b>Wire Tangling:</b> If a robot’s wires become tangled during the match, the game will be paused until the issue is resolved. This ensures fair play and prevents any team from gaining an unfair advantage due to technical issues.</li>
             <li><b>No Gripping or Clamping:</b> Robots are not allowed to have clamps or mechanisms that grip or hold onto other robots. The objective is to move the ball, not interfere physically with the opponent's robot. Any attempt to restrict the movement of the other robot may lead to a foul.</li>
             <li><b>Ball Handling:</b> Robots are strictly prohibited from picking up the ball. The goal of the game is to push or move the ball towards the opponent’s goal, not to lift or grab it. Violating this rule will result in a foul or penalty.</li>
@@ -59,16 +65,16 @@
 
 
 
-        <h2>Task Overview:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Task Overview:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li> Teams must design and build a manually controlled robot that moves a ball towards the opponent's goal, without gripping or grabbing the ball.</li>
         </ul>
-        <h2>Team Description:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Team Description:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li>A team can have 2 to 4 members, and participants may come from different educational institutions, including Engineering, Undergraduate, or Postgraduate students. Each team is allowed to submit one robot for the competition.</li>
         </ul>
-        <h2>Gameplay and Fouls:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Gameplay and Fouls:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li>At the start of each half, the ball is placed in the center circle.</li>
             <li>Both robots begin at their respective goalposts.</li>
             <li>After a goal is scored, the ball placed back to the center circle, and both bots return to their goalposts.</li>
@@ -76,8 +82,8 @@
             <li>If a bot commits a foul, the ball is placed back in the center, and the non-fouling team starts from the center circle. The fouling bot cannot leave the goalpost, till the attacker touches the ball.</li>
         </ul>
 
-        <h2>Note:</h2>
-        <ul>
+        <h2 class="text-xl font-bold">Note:</h2>
+        <ul class="list-disc pl-5 text-lg">
             <li> The organizers reserve the right to modify any of the existing rules or introduce new ones if the situation requires it. Any changes made will be communicated to all participating teams before the event begins, ensuring everyone is informed in advance.</li>
             <li>The decisions made by the event management are final and binding. In the event of any disagreements or conflicts regarding the rules or the competition, these will be resolved solely by the organizing team, whose authority in this matter is unquestionable.</li>
         </ul>

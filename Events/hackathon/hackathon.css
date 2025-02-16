@@ -24,13 +24,28 @@ body{
     font-family:poppins;
 }
 
+ul {
+    list-style-type: disc !important;
+    padding-left: 20px !important; /* Adjust as needed */
+    margin-left: 20px !important;
+}
+
 
 li{
     font-size: 20px;
 }
 
+
 .poster{
     background-color: red;
-    width:80vw;
-    height: 200px;
+    width:60vw;
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
