@@ -71,17 +71,18 @@
     text-align: center;
 }
 
-#landing-page  {
-    font-size: 10rem;
-    margin-bottom: 10px;
-    font-family:TEKRON ;
-}
+/* #landing-page  { */
+    /* font-size: 10rem; */
+    /* margin-bottom: 10px; */
+    /* font-family:TEKRON ; */
+/* } */
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: -25rem;
 }
 
 .logo-container .clg_logo {
@@ -99,7 +100,7 @@
     letter-spacing: 15px;
     font-weight: bold;
     color: #ffffff;
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-family: clock;
 }
 
