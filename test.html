@@ -5,64 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glitch Effect</title>
     <style>
-        body {
-            background: linear-gradient(135deg, #0d0221, #3a1c71, #d72d79, #f6a5c0);
-            background-size: 400% 400%;
-            animation: backgroundAnimation 10s infinite alternate;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        
-        @keyframes backgroundAnimation {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
-        }
-        
-        .glitch {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #fff;
-            position: relative;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-        }
-        
-        .glitch::before, 
-        .glitch::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0.8;
-        }
-        
-        .glitch::before {
-            color: #ff00c1;
-            transform: translate(-3px, -2px);
-            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-            animation: glitch 0.6s infinite alternate-reverse;
-        }
-        
-        .glitch::after {
-            color: #00eaff;
-            transform: translate(3px, 2px);
-            clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0% 100%);
-            animation: glitch 0.6s infinite alternate;
-        }
-        
-        @keyframes glitch {
-            0% { transform: translate(-2px, -1px); }
-            20% { transform: translate(2px, 1px); }
-            40% { transform: translate(-1px, 2px); }
-            60% { transform: translate(1px, -2px); }
-            80% { transform: translate(-2px, -1px); }
-            100% { transform: translate(2px, 1px); }
-        }
+       body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #25064d, #0b0219);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Floating Glow Dots */
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.glow-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff0080;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+    animation: moveUpDown 3s infinite ease-in-out;
+}
+
+/* Creating multiple floating dots */
+.glow-dot:nth-child(1) { top: 20%; left: 30%; }
+.glow-dot:nth-child(2) { top: 50%; left: 70%; animation-duration: 4s; }
+.glow-dot:nth-child(3) { top: 80%; left: 20%; animation-duration: 5s; }
+.glow-dot:nth-child(4) { top: 10%; left: 80%; animation-duration: 3.5s; }
+
+/* Animated Gradient Overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 0, 128, 0.2), rgba(0, 255, 255, 0.2));
+    mix-blend-mode: overlay;
+    animation: gradientMove 5s infinite alternate ease-in-out;
+}
+
+@keyframes gradientMove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
     </style>
 </head>
 <body>
