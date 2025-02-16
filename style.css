@@ -295,6 +295,19 @@ div img{
     transition: background-color 0.3s ease-in-out;
 }
 
+#register_icpc{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #1E5AFF;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
 
 
 
