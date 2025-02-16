@@ -255,3 +255,46 @@ div img{
 
 
 
+/* CSS FOR REGISTRATION BUTTONS */
+#register_hackathon{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #1E5AFF;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#register_robosoccer{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #1E5AFF;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#register_amongus{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #1E5AFF;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
