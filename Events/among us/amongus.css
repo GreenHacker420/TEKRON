@@ -1,0 +1,36 @@
+@font-face {
+    font-family: poppins;
+    src: url(//Events/Poppins-Black.ttf);
+}
+html{
+    background-image: url(../background.png);
+    background-attachment: fixed;
+}
+*{
+    background-color: whitesmoke;
+    background: transparent;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rules{
+    width: 60% !important; 
+    margin: auto;
+    padding: 20px;
+    font-family:poppins;
+}
+
+
+li{
+    font-size: 20px;
+}
+
+.poster{
+    background-color: red;
+    width:80vw;
+    height: 200px;
+}

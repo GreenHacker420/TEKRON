@@ -22,7 +22,7 @@ nav {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: black;
+    color: white;
     margin-left:auto;
 }
 
@@ -37,7 +37,7 @@ nav {
 
 .link {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
     padding: 10px;
     margin-top: 7px;
