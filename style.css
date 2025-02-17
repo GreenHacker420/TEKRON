@@ -1,9 +1,4 @@
 @font-face {
-    font-family:cyberpunk;
-    src: url(fonts/Sucker\ Brush.ttf);
-}
-
-@font-face {
     font-family:TEKRON;
     src: url(fonts/Orbitron-VariableFont_wght.ttf);
 }
@@ -13,6 +8,10 @@
     src: url(fonts/digital-7.ttf);
 }
 
+@font-face {
+    font-family:font;
+    src: url(fonts/VarelaRound-Regular.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -130,6 +129,7 @@
 .about {
     font-size: 4rem;
     color: #bfbfbf;
+    font-family: TEKRON;
 }
 
 .About {
@@ -137,6 +137,7 @@
     line-height: 1.8;
     color: #bfbfbf;
     font-size: 1.2rem;
+    font-family: font;
 }
 
 .image-container {
