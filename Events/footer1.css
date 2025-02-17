@@ -1,0 +1,81 @@
+/* Footer Styling */
+#footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Footer Logo - Left */
+  .footer-logo {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Footer Links - Center */
+  .footer-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Footer Contacts - Right */
+  .footer-contacts {
+    flex: 1;
+    text-align: right;
+    min-width: 250px;
+  }
+  
+  /* Bottom Footer */
+  .bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-logo, .footer-links, .footer-contacts {
+      text-align: center;
+      flex: unset;
+      margin-bottom: 10px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
