@@ -48,3 +48,24 @@ li{
     height: 100%;
     border-radius: 20px;
 }
+
+.navig{
+    background-color: rgba(0, 0, 0, 0.545);
+    width: 100%;
+}
+.navig {
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0) 70%);
+    position: relative;
+  }
+  
+  .navig::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    filter: blur(5px);
+    z-index: -1;
+  }
