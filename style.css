@@ -545,3 +545,32 @@ transition-delay: 0s;
     }
 }
 
+/* #logo {
+    height: auto;
+    position: relative;
+    top: 10%;
+    transition: transform 0.5s ease; 
+}
+
+#logo:hover {
+    transform: rotate(360deg); 
+} */
+
+@keyframes logoRotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    33% {
+      transform: rotate(-45deg);
+    }
+    66% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+  
+  .about-logo {
+    animation: logoRotation 6s infinite;
+  }
