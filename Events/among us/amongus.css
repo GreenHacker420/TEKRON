@@ -51,11 +51,15 @@ li{
 
 .podium{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
     align-items: center;
     margin-top: 3rem;
     margin-bottom:5rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .place{
     width: 100px;
@@ -63,9 +67,47 @@ li{
     border-radius: 20px;
 }
 
-.one{
+.first{
     width: 250px;
     height: 250px;
+    background-image: url("/Events/1st.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.second{
+    width: 225px;
+    height: 225px;
+    background-image: url("/Events/2nd.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.third{
+    width: 225px;
+    height: 225px;
+    background-image: url("/Events/3re.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.prize{
+    position: relative;
+    top: 30%;
 }
 
 .two,.three{
@@ -74,9 +116,22 @@ li{
 }
 .prize{
     width: 90px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: aqua;
-    position: relative;
-    top: 40%;
+    height: 40px;
+    background-color: rgba(49, 49, 49, 0.784);
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .podium {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first, .second, .third {
+        width: 180px;
+        height: 180px;
+    }
 }

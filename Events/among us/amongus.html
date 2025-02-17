@@ -1,118 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>AMONG-US</title>
-    <link rel="stylesheet" href="amongus.css" />
-  </head>
-  <body
-    style="
-      background-image: url(amongustheme.gif);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-      color: aliceblue;
-      background-color: black;
-    "
-  >
+    <link rel="stylesheet" href="amongus.css">
+</head>
+<body style="background-image: url(amongustheme.gif);background-repeat: no-repeat; background-attachment: fixed;background-size: 100% 100%;color: aliceblue;background-color: black;">
+
     <h1>AMONG US</h1>
     <div class="poster">
-      <img src="./Minimalistic Landscape Artwork.webp" alt="" />
+        <img src="./Minimalistic Landscape Artwork.webp" alt="">
     </div>
-    <a href="https://pin.it/508SdnVy2"
-      ><button
-        class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
-      >
+    <a href="https://pin.it/508SdnVy2"><button class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
         Register
-      </button></a
-    >
-
+    </button></a>
+    
     <div class="podium">
-        <div class="1st">
-          <div class="prize">1st Place</div>
-          <img src="/Events/1st.avif" class="one place" alt="" />
+        <div class="second">
+            <div class="prize">cost</div>
         </div>
-        <div class="2nd">
-          <div class="prize">2nd Place</div>
-          <img src="/Events/2nd.avif" class="two place" alt="" />
+        <div class="first">
+            <div class="prize">cost</div>
         </div>
-        <div class="3rd">
-          <div class="prize">3rd Place</div>
-          <img src="/Events/3rd.avif" class="three place" alt="" />
+        <div class="third">
+            <div class="prize">cost</div>
         </div>
-      </div>
+    </div>
 
     <div class="rules">
-      <h1>Event Structure</h1>
-
-      <h2>1. Participants</h2>
-      <ul>
-        <li>10-15 players per game.</li>
-        <li>
-          Roles:
-          <ul>
-            <li>1 Imposter</li>
-            <li>1 Jester</li>
-            <li>The rest are Crewmates</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h2>2. Game Setup</h2>
-      <ul>
-        <li>
-          Each player will be given a role card (Imposter, Jester, or Crewmate)
-          at the start of the game.
-        </li>
-        <li>
-          Walkie-talkies will be distributed to all players for communication.
-        </li>
-        <li>
-          Missions will be assigned to Crewmates (e.g., solving puzzles, finding
-          hidden objects, etc.).
-        </li>
-        <li>The Imposter will be given a list of fake missions to blend in.</li>
-      </ul>
-
-      <h2>3. Game Rules</h2>
-      <ul>
-        <li>
-          <strong>Imposter:</strong> Can "kill" Crewmates by lightly tapping
-          their back.
-        </li>
-        <li>
-          <strong>Jester:</strong> Must get themselves voted out during meetings
-          to win.
-        </li>
-        <li>
-          <strong>Crewmates:</strong> Complete missions and identify the
-          Imposter.
-        </li>
-        <li>
-          <strong>Walkie-Talkies:</strong> Can only be used to report dead
-          bodies or call for emergency meetings.
-        </li>
-      </ul>
-
-      <h2>Winning Conditions</h2>
-      <ul>
-        <li>
-          <strong>Imposter:</strong> Wins if all Crewmates are eliminated or if
-          they survive for 30 minutes.
-        </li>
-        <li><strong>Crewmates:</strong> Win if they vote out the Imposter.</li>
-        <li>
-          <strong>Jester:</strong> Wins if they are voted out during a meeting.
-        </li>
-      </ul>
+        <h1>Event Structure</h1>
+        
+        <h2>1. Participants</h2>
+        <ul>
+            <li>10-15 players per game.</li>
+            <li>Roles:
+                <ul>
+                    <li>1 Imposter</li>
+                    <li>1 Jester</li>
+                    <li>The rest are Crewmates</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>2. Game Setup</h2>
+        <ul>
+            <li>Each player will be given a role card (Imposter, Jester, or Crewmate) at the start of the game.</li>
+            <li>Walkie-talkies will be distributed to all players for communication.</li>
+            <li>Missions will be assigned to Crewmates (e.g., solving puzzles, finding hidden objects, etc.).</li>
+            <li>The Imposter will be given a list of fake missions to blend in.</li>
+        </ul>
+        
+        <h2>3. Game Rules</h2>
+        <ul>
+            <li><strong>Imposter:</strong> Can "kill" Crewmates by lightly tapping their back.</li>
+            <li><strong>Jester:</strong> Must get themselves voted out during meetings to win.</li>
+            <li><strong>Crewmates:</strong> Complete missions and identify the Imposter.</li>
+            <li><strong>Walkie-Talkies:</strong> Can only be used to report dead bodies or call for emergency meetings.</li>
+        </ul>
+        
+        <h2>Winning Conditions</h2>
+        <ul>
+            <li><strong>Imposter:</strong> Wins if all Crewmates are eliminated or if they survive for 30 minutes.</li>
+            <li><strong>Crewmates:</strong> Win if they vote out the Imposter.</li>
+            <li><strong>Jester:</strong> Wins if they are voted out during a meeting.</li>
+        </ul>
     </div>
 
+
     <button>REGISTER</button>
-  </body>
+</body>
 </html>
