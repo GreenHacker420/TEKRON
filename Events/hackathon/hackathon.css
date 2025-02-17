@@ -1,6 +1,6 @@
 @font-face {
-    font-family: poppins;
-    src: url(//Events/Poppins-Black.ttf);
+    font-family: font;
+    src: url(/fonts/VarelaRound-Regular.ttf)
 }
 html{
     background-image: url(../background.png);
@@ -21,7 +21,7 @@ body{
     width: 60% !important; 
     margin: auto;
     padding: 20px;
-    font-family:poppins;
+    font-family:font;
 }
 
 ul {
