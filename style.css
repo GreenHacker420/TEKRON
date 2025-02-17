@@ -577,18 +577,4 @@ transition-delay: 0s;
         width: 20vw;
         font-size: 4rem;  
     }
-<<<<<<< HEAD
-    66% {
-      transform: rotate(0deg);
-    }
-    78% {
-      transform: rotate(45deg);
-    }
-  }
-  
-  .about-logo {
-    animation: logoRotation 6s infinite;
-  }
-=======
 }
->>>>>>> 79b06d6 (.)
