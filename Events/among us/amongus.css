@@ -78,4 +78,6 @@ li{
     height: 50px;
     border-radius: 20px;
     background-color: aqua;
+    position: relative;
+    top: 40%;
 }
