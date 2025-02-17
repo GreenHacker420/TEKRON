@@ -578,3 +578,23 @@ transition-delay: 0s;
         font-size: 4rem;  
     }
 }
+
+
+.footer{
+    display: grid;
+    color: white;
+    padding: 30px 50px;
+}
+.footer-logo img {
+    max-width: 180px;
+}
+
+.footer-links, .footer-contacts {
+    text-align: left;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+

@@ -73,3 +73,9 @@ li{
     width: 210px;
     height: 210px;
 }
+.prize{
+    width: 90px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: aqua;
+}
