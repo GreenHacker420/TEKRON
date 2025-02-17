@@ -319,12 +319,14 @@ p {
 
 #gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap; 
     gap: 40px; 
     padding: 20px;
     width: 90%;
     max-width: 1500px;
     margin: auto;
+    
 }
 
 
@@ -667,3 +669,28 @@ transition-delay: 0s;
     }
 }
 
+@keyframes logoRotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    33% {
+      transform: rotate(-45deg);
+    }
+    66% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(45deg);
+    }
+  }
+  
+  .about-logo {
+    animation: logoRotation 6s infinite;
+  }
+
+  @media (max-width: 768px) {
+    #gallery{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
