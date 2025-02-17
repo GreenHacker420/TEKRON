@@ -55,7 +55,7 @@ nav {
     width: 0;
     height: 2px;
     background: rgb(255, 255, 255);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: translateX(-50%);
 }
 .nav-links a:hover::after {
