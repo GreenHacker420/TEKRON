@@ -48,3 +48,16 @@
     margin-right: auto;
 
 }
+@media (max-width: 768px) {
+    .podium {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first, .second, .third {
+        width: 180px;
+        height: 180px;
+    }
+}
