@@ -18,46 +18,14 @@
     box-sizing: border-box;
 }
 
-
-
-
-
-/* CSS FOR NAV BAR */
-/* .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    position: relative;
+.content h2{
+    font-family: TEKRON;
 }
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    padding: 0 10px;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
+.content p{
+    font-family: font;
 }
 
 
- */
 
 
 /* CSS FOR LANDING PAGE */
@@ -74,24 +42,7 @@
     margin-top: -10rem;
 }
 
-/* #landing-page  { */
-    /* font-size: 10rem; */
-    /* margin-bottom: 10px; */
-    /* font-family:TEKRON ; */
-/* } */
 
-/* .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 5rem;
-} */
-
-/* .logo-container .clg_logo {
-    width: auto;
-    height: 20rem;
-} */
 
 
 
@@ -278,44 +229,7 @@ div img{
 
 
 
-/* CSS FOR EVENT SECTION */
-/* #events {
 
-    margin-top: 15rem;
-    max-width: 1500px;
-    margin: auto;
-    display: grid;
-    
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.event-column {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.poster {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-p {
-    color: #555;
-}
-@media (max-width: 768px) {
-    #events {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 480px) {
-    #events {
-        grid-template-columns: repeat(1, 1fr);
-    }
-} */
 
 
 
@@ -471,68 +385,6 @@ transition-delay: 0s;
 
 
 
-/* CSS FOR REGISTRATION BUTTONS */
-/* #register_hackathon{
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #1E5AFF;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#register_robosoccer{
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #1E5AFF;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#register_amongus{
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #1E5AFF;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#register_icpc{
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #1E5AFF;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease-in-out;
-} */
-
-
-
-
-
-#sponsors{
-    display: flex;
-    flex-wrap: wrap;
-
-}
 .mainlogo {
     width: 50vw; 
     height: auto;
@@ -594,7 +446,6 @@ transition-delay: 0s;
 
 #GALLERY{
     text-align: center;
-    /* margin: 3rem; */
     margin-top: 9rem;
     margin-bottom: 5rem;
     font-family: TEKRON;
@@ -614,10 +465,10 @@ transition-delay: 0s;
 .footer-links, .footer-contacts {
     text-align: left;
 }
-.footer-links a{
+.bottom a{
     text-decoration: none;
     color: white;
-    display: block;
+    font-weight: bolder;
 }
 
 
