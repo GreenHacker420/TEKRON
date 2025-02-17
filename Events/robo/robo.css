@@ -2,9 +2,19 @@
     font-family: font;
     src: url(/fonts/VarelaRound-Regular.ttf)
 }
+@font-face {
+    font-family: tekron;
+    src: url(/fonts/Orbitron-VariableFont_wght.ttf)
+}
 html{
     background-image: url(../background.png);
     background-attachment: fixed;
+}
+.name{
+    text-align: center;
+    font-size: 4rem;
+    font-family: tekron;
+    margin: 20px;
 }
 *{
     background-color: whitesmoke;

@@ -6,6 +6,13 @@
     font-family: tekron;
     src: url(/fonts/Orbitron-VariableFont_wght.ttf)
 }
+
+.name{
+    text-align: center;
+    font-size: 4rem;
+    font-family: tekron;
+    margin: 20px;
+}
 html{
     background-image: url(../background.png);
     background-attachment: fixed;

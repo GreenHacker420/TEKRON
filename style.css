@@ -24,6 +24,9 @@
 .content p{
     font-family: font;
 }
+.content a{
+    color: rgb(255, 255, 255);
+}
 
 
 
@@ -115,51 +118,51 @@
 
 
 
-/* CSS FOR INFINITE SLIDER FOR EVENT POSTERS */
-.slider{
-    --width: 200px;
-    --height: 200px;
+/* CSS FOR INFINITE SLIDER FOR GALLERY BELOW */
+.slider {
+    --width: 400px;
+    --height: 300px;
     --quantity: 9;
 }
 
-.slider{
+.slider {
     width: 100%;
     height: var(--height);
     overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000 10% 90%,
-        transparent
-    );
+    mask-image: linear-gradient(to right,
+            transparent,
+            #000 10% 90%,
+            transparent);
     margin-bottom: 15rem;
 }
 
-.slider .list{
+.slider .list {
     display: flex;
     width: 100%;
     min-width: calc(var(--width) * var(--quantity));
     position: relative;
 }
 
-.slider .list .item{
+.slider .list .item {
     width: var(--width);
     height: var(--height);
     position: absolute;
     left: 100%;
     animation: autoRun 15s linear infinite;
     transition: filter 0.5s;
-    animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1) - 15s)!important;
+    animation-delay: calc((15s / var(--quantity)) * (var(--position) - 1) - 15s) !important;
 }
 
-.slider .list .item img{
+.slider .list .item img {
     width: 100%;
 }
 
-@keyframes autoRun{
-    from{
+@keyframes autoRun {
+    from {
         left: 100%;
-    }to{
+    }
+
+    to {
         left: calc(var(--width) * -1);
     }
 }
@@ -173,17 +176,20 @@
     filter: grayscale(0);
 } */
 
-.slider[reverse="true"] .item{
+.slider[reverse="true"] .item {
     animation: reversePlay 15s linear infinite;
 }
 
-@keyframes reversePlay{
-    from{
+@keyframes reversePlay {
+    from {
         left: calc(var(--width) * -1);
-    }to{
+    }
+
+    to {
         left: 100%;
     }
 }
+
 
 
 
@@ -233,8 +239,8 @@ div img{
 
 
 
-
-#events{
+/* CSS FOR EVENTS SECTION */
+#events {
     text-align: center;
     font-family: TEKRON;
     font-size: 4rem;
@@ -244,13 +250,13 @@ div img{
 #gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap; 
-    gap: 40px; 
+    flex-wrap: wrap;
+    gap: 40px;
     padding: 20px;
     width: 90%;
     max-width: 1500px;
     margin: auto;
-    
+
 }
 
 
@@ -276,7 +282,7 @@ div img{
 .card .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -289,7 +295,7 @@ div img{
     text-align: center;
     transform: translateY(100%);
     transition: transform 0.4s ease;
-    overflow-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 .content h2 {
@@ -308,11 +314,11 @@ div img{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    margin-right:15px ;
+    margin-right: 15px;
 }
 
 .card:hover .image-box img {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .card:hover .content {
@@ -327,57 +333,64 @@ div img{
 
 
 .btn {
-position: relative; padding: 10px 30px;
-margin: 0 15px; color: #fff;
-text-decoration: none;
-text-transform: uppercase;
-Letter-spacing: 2px; 
-font-size: 20px; 
-Overflow:hidden;
-transition: 0.5s;
+    position: relative;
+    padding: 10px 30px;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    font-size: 20px;
+    Overflow: hidden;
+    transition: 0.5s;
 }
 
-.btn:hover{
-background: #ff4a4a;;
-color: #ffffff;
-box-shadow: 0 0 50px #ff4a4a;;
-transition-delay: 0.5s;
+.btn:hover {
+    background: #ff4a4a;
+    ;
+    color: #ffffff;
+    box-shadow: 0 0 50px #ff4a4a;
+    ;
+    transition-delay: 0.5s;
 }
 
-.btn:before{
-content: '';
-position: absolute;
-top: 0;
-Left: 0; width: 10px; height: 10px;
-border-top: 2px solid #ff0000; border-left: 2px solid #ff0000;
-transition:0.5s;
-transition-delay: 0.5s;
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    transition: 0.5s;
+    transition-delay: 0.5s;
 }
 
 
-.btn:hover:before
-{
-width: 100%; height: 100%;
-transition-delay: 0s;
+.btn:hover:before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
 }
 
-.btn:after{
-content: '';
-position: absolute;
-bottom: 0; 
-right: 0; 
-width: 10px; 
-height: 10px;
-border-bottom: 2px solid #ff0000; 
-border-right: 2px solid #ff0000;
-transition: 0.5s;
-transition-delay: 0.5s;
+.btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    transition: 0.5s;
+    transition-delay: 0.5s;
 }
 
-.btn:hover:after
-{
-width: 100%; height: 100%;
-transition-delay: 0s;
+.btn:hover:after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
 }
 
 
@@ -475,93 +488,94 @@ transition-delay: 0s;
 
 
 
-/* CSS FOR GALLERY SLIDER */
-.gallery{
+/* CSS FOR GALLERY SLIDER BELOW*/
+.gallery {
     --width: 400px;
     --height: 300px;
     --quantity: 9;
 }
 
-.gallery{
+.gallery {
     width: 100%;
     height: var(--height);
     overflow: hidden;
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        #000 10% 90%,
-        transparent
-    );
+    mask-image: linear-gradient(to right,
+            transparent,
+            #000 10% 90%,
+            transparent);
     margin-bottom: 8rem;
 }
 
-.gallery .list1{
+.gallery .list1 {
     display: flex;
     width: 100%;
     min-width: calc(var(--width) * var(--quantity));
     position: relative;
 }
 
-.gallery .list1 .item1{
+.gallery .list1 .item1 {
     width: var(--width);
     height: var(--height);
     position: absolute;
     left: 100%;
     animation: autoRun 15s linear infinite;
     transition: filter 0.5s;
-    animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1) - 15s)!important;
+    animation-delay: calc((15s / var(--quantity)) * (var(--position) - 1) - 15s) !important;
 }
 
-.gallery .list1 .item1 img{
+.gallery .list1 .item1 img {
     width: 100%;
 }
 
-@keyframes autoRun{
-    from{
+@keyframes autoRun {
+    from {
         left: 100%;
-    }to{
+    }
+
+    to {
         left: calc(var(--width) * -1);
     }
 }
 
-
-
-
-
-.gallery[reverse="false"] .item1{
+.gallery[reverse="false"] .item1 {
     animation: reversePlay 15s linear infinite;
 }
 
-@keyframes reversePlay{
-    from{
+@keyframes reversePlay {
+    from {
         left: calc(var(--width) * -1);
-    }to{
+    }
+
+    to {
         left: 100%;
     }
 }
 
 @keyframes logoRotation {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    33% {
-      transform: rotate(-45deg);
-    }
-    66% {
-      transform: rotate(0deg);
-    }
-    80% {
-      transform: rotate(45deg);
-    }
-  }
-  
-  .about-logo {
-    animation: logoRotation 6s infinite;
-  }
 
-  @media (max-width: 768px) {
-    #gallery{
-        display:grid;
+    33% {
+        transform: rotate(-45deg);
+    }
+
+    66% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(45deg);
+    }
+}
+
+.about-logo {
+    animation: logoRotation 6s infinite;
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-  }
+}
