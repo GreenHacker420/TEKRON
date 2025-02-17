@@ -1,3 +1,10 @@
+@font-face {
+    font-family:tekron;
+    src: url(fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+
+
 .first{
     width: 250px;
     height: 250px;
@@ -60,4 +67,27 @@
         width: 180px;
         height: 180px;
     }
+}
+
+.prize p{
+    position: relative;
+    top: 25%;
+    font-family: tekron;
+    font-weight: bolder;
+}
+
+.two,.three{
+    width: 210px;
+    height: 210px;
+}
+.prize{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(49, 49, 49, 0.784);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+}
+.prize:hover{
+    transform: scale(1.1);
 }
