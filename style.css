@@ -544,35 +544,3 @@ transition-delay: 0s;
     }
 }
 
-.countdown {
-    font-size: 8rem;
-    letter-spacing: 15px;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: clock;
-    width: 50vw;
-    height: auto;
-    margin-top: -10rem;
-}
-
-@media (max-width: 800px) {
-    .countdown {
-        width: 30vw;
-        font-size: 6rem;  
-    }
-}
-
-@media (max-width: 600px) {
-    .countdown {
-        width: 25vw;
-        font-size: 5rem;  
-        
-    }
-}
-
-@media (max-width: 400px) {
-    .countdown {
-        width: 20vw;
-        font-size: 4rem;  
-    }
-}
