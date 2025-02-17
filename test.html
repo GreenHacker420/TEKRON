@@ -3,85 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Document</title>
     <style>
-        /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 40px; 
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
         }
 
-        body {
-            background-color: black;
-            color: white;
-        } */
 
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 80%;
-            margin: auto;
-            padding: 50px 0;
+        .card {
+            width: 100%;
+            margin-bottom: 600px;
+            aspect-ratio: 4 / 3;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background-color: #1c1c1c;
         }
 
-        .text-content {
-            flex: 1;
-            padding-left: 50px;
+        .card .image-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
 
-        h1 {
-            font-size: 3rem;
-            color: #bfbfbf;
+        .card .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition: transform 0.5s ease-in-out;
         }
 
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #bfbfbf;
-        }
-
-        .image-container {
-            flex: 0.5;
+        .card .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
             text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            overflow-wrap: break-word; 
         }
 
-        .image-container img {
-            width: 200px; /* Adjust size */
-            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        .content h2 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #ff4a4a;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                text-align: center;
-            }
-            .text-content {
-                padding: 20px;
-            }
+        .content p {
+            font-size: 0.9em;
+            color: #d1d1d1;
+            margin-top: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            margin-right:15px ;
+        }
+
+        .card:hover .image-box img {
+            transform: scale(1.05); 
+        }
+
+        .card:hover .content {
+            transform: translateY(0);
+        }
+
+        .card:hover .content h2,
+        .card:hover .content p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .btn {
+        position: relative; padding: 10px 30px;
+        margin: 0 15px; color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        Letter-spacing: 2px; 
+        font-size: 20px; 
+        Overflow:hidden;
+        transition: 0.5s;
+        }
+
+        .btn:hover{
+        background: #ff4a4a;;
+        color: #111;
+        box-shadow: 0 0 50px #ff4a4a;;
+        transition-delay: 0.5s;
+        }
+
+        .btn:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        Left: 0; width: 10px; height: 10px;
+        border-top: 2px solid #ff0000; border-left: 2px solid #ff0000;
+        transition:0.5s;
+        transition-delay: 0.5s;
+        }
+
+
+        .btn:hover:before
+        {
+        width: 100%; height: 100%;
+        transition-delay: 0s;
+        }
+
+        .btn:after{
+        content: '';
+        position: absolute;
+        bottom: 0; 
+        right: 0; 
+        width: 10px; 
+        height: 10px;
+        border-bottom: 2px solid #ff0000; 
+        border-right: 2px solid #ff0000;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        }
+
+        .btn:hover:after
+        {
+        width: 100%; height: 100%;
+        transition-delay: 0s;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="image-container">
-            <img src="damru-icon.png" alt="Damru Image"> <!-- Replace with your image -->
+    <div class="gallery">
+        
+        <div class="card">
+            <div class="image-box">
+                <img src="WhatsApp Image 2025-02-17 at 15.31.12.jpeg" alt="Black Clover">
+            </div>
+            <div class="content">
+                <h2>HACKATHON</h2>
+                <p>In "24hr Hackathon" participants will create a working prototype or solution, demonstrating their coding, problem-solving, and teamwork skills.</p>
+                <a href="https://www.viz.com/shonenjump/chapters/black-clover" class="btn" target="_blank" >Register</a>
+            </div>
         </div>
-        <div class="text-content">
-            <h1>About Us</h1>
-            <p>
-                Damru is not just the annual cultural fest of Rishihood University but a celebration of creativity, 
-                connection, and inspiration. This "Ten Years of Magic" has grown into a hub for transformative 
-                experiences, blending thrilling competitions, engaging activities, and performances by renowned artists. 
-                Over the years, Rishihood University has played host to a stellar lineup of influencers, parliamentarians, 
-                philanthropists, Padma Shri awardees, celebrities, senior academicians, and C Series guests. 
-                From electrifying concerts to thought-provoking discussions, Damru embodies the spirit of innovation, 
-                making lasting memories and fueling the dreams of all who join its vibrant journey.
-            </p>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_1.png" alt="Bleach">
+            </div>
+            <div class="content">
+                <h2>ROBO-SOCCER</h2>
+                <p>"Robo Soccer" promises an unforgettable experience for competitors and spectators alike! Teams will go head-to-head, showcasing their engineering skills and strategic prowess as they fight for dominance and the coveted title of champion.</p>
+                <a href="https://www.viz.com/shonenjump/chapters/bleach" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_2.png" alt="Jujutsu Kaisen">
+            </div>
+            <div class="content">
+                <h2>AMONG-US</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="https://www.viz.com/shonenjump/chapters/jujutsu-kaisen" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_3.png" alt="Berserk">
+            </div>
+            <div class="content">
+                <h2>Scavenger Hunt</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="https://www.mangareader.net/berserkB" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_4.png" alt="Solo Leveling">
+            </div>
+            <div class="content">
+                <h2>ICPC</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_5.png" alt="Attack On Titan">
+            </div>
+            <div class="content">
+                <h2>Event</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_6.png" alt="Dragon Ball">
+            </div>
+            <div class="content">
+                <h2>Event</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_7.png" alt="Naruto">
+            </div>
+            <div class="content">
+                <h2>Event</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="" class="btn" target="_blank">Register</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="Images/slider2_8.png" alt="Demon Slayer">
+            </div>
+            <div class="content">
+                <h2>Event</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ea!</p>
+                <a href="" class="btn" target="_blank">Register</a>
+            </div>
         </div>
     </div>
-
+    
 </body>
 </html>
