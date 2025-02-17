@@ -1,6 +1,6 @@
 @font-face {
     font-family:tekron;
-    src: url(fonts/Orbitron-VariableFont_wght.ttf);
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf);
 }
 
 
@@ -90,4 +90,46 @@
 }
 .prize:hover{
     transform: scale(1.1);
+}
+
+/* .poster {
+    background-color: red;
+    width: 60vw;
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    .poster {
+        width: 90vw;
+        height: 400px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .poster {
+        width: 80vw;
+        height: 300px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .poster {
+        width: 80vw;
+        height: 200px;
+    }
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+nav{
+    margin-bottom: 30px;
 }

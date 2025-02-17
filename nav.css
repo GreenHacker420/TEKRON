@@ -123,3 +123,12 @@ nav {
   #logo:hover {
     transform: rotate(360deg);
   }
+
+  .hamlogo{
+    height:60px;
+  }
+
+
+nav{
+    width: 100%;
+}
