@@ -53,12 +53,29 @@
 
 /* CSS FOR COUNTDOWN IN LANDING PAGE */
 .countdown {
-    margin-top: -10rem;
-    font-size: 8rem;
-    letter-spacing: 15px;
+    font-size: clamp(2rem, 8vw, 8rem);
+    letter-spacing: clamp(5px, 1.5vw, 15px);
     font-weight: bold;
     color: #ffffff;
     font-family: clock;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: -10rem auto 0;
+}
+
+@media (max-width: 768px) {
+    .countdown {
+        margin-top: -5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown {
+        margin-top: -3rem;
+        letter-spacing: clamp(3px, 1vw, 5px);
+    }
 }
 
 
@@ -424,35 +441,28 @@ div img{
 }
 
 .countdown {
-    font-size: 8rem;
-    letter-spacing: 15px;
+    font-size: clamp(2rem, 8vw, 8rem);
+    letter-spacing: clamp(5px, 1.5vw, 15px);
     font-weight: bold;
     color: #ffffff;
     font-family: clock;
-    width: 50vw;
-    height: auto;
-    margin-top: -10rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: -10rem auto 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .countdown {
-        width: 30vw;
-        font-size: 6rem;  
+        margin-top: -5rem;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .countdown {
-        width: 25vw;
-        font-size: 5rem;  
-        
-    }
-}
-
-@media (max-width: 400px) {
-    .countdown {
-        width: 20vw;
-        font-size: 4rem;  
+        margin-top: -3rem;
+        letter-spacing: clamp(3px, 1vw, 5px);
     }
 }
 
