@@ -175,3 +175,7 @@ nav{
 footer{
     width: 100%;
 }
+.rules{
+    background-color: black;
+    margin-top: 50px;
+}
