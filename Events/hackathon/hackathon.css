@@ -35,6 +35,10 @@ body{
     font-family:font;
 }
 
+p{
+    font-size: 20px;
+}
+
 ul {
     list-style-type: disc !important;
     padding-left: 20px !important; /* Adjust as needed */

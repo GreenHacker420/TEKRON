@@ -41,7 +41,9 @@ ul {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
-
+p{
+    font-size: 20px;
+}
 li{
     font-size: 20px;
 }
@@ -83,4 +85,18 @@ li{
 
 #rules ul li{
     line-height: 40px;
+}
+
+#rules h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+#rules h3{
+    font-size: 25px;
+}
+#rules h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: tekron;
+    justify-self: center;
 }
