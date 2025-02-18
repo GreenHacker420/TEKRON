@@ -2,6 +2,10 @@
     font-family:tekron;
     src: url(../../fonts/Orbitron-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family:font;
+    src: url(../../fonts/VarelaRound-Regular);
+}
 
 
 
@@ -72,7 +76,7 @@
 .prize p{
     position: relative;
     top: 25%;
-    font-family: tekron;
+    font-family: font;
     font-weight: bolder;
 }
 
