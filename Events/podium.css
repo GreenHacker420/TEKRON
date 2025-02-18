@@ -8,7 +8,7 @@
 .first{
     width: 250px;
     height: 250px;
-    background-image: url("/Events/1st.avif");
+    background-image: url("../Events/1st.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 .second{
     width: 225px;
     height: 225px;
-    background-image: url("/Events/2nd.avif");
+    background-image: url("../Events/2nd.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 .third{
     width: 225px;
     height: 225px;
-    background-image: url("/Events/3re.avif");
+    background-image: url("../Events/3re.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,4 +159,11 @@ nav{
     margin-top: 20px;
     font-family: tekron;
     justify-self: center;
+}
+.prize p {
+    font-size: 17px; /* Adjust as needed */
+    font-weight: bold;
+    color: white;
+    display: inline-block; /* Ensures no line breaks */
+    white-space: nowrap;  /* Prevents wrapping */
 }
