@@ -15,15 +15,57 @@
             text-align: center;
             align-items: center;
             justify-items: center;
+            background-color: wheat;
         }
         #food-partners img{
             width: 200px;
             /* height: 200px; */
         }
+        #Partners{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+            
+        }
+        #Partners img{
+            width: 200px;
+            /* height: 100px; */
+        }
+        #Partners div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        #Partners div h1{
+            justify-content: flex-start;
+            justify-items: flex-start;
+        }
+
     </style>
 </head>
 <body>
+    <section id="partners">
+        <div id="Partners">
+        <div><h1>Internship Partner</h1><img src="AIESEC Logo.png"></div>
+        <div><h1>Platform Partner</h1><img src="Unstop Logo Blue Large.png"></div>
+        <div><h1>Production Partner</h1><img src="jv.avif"></div>
+        <div><h1>Cafe Partner</h1><img src="cp.avif"></div>
+        <div><h1>Beauty Partner</h1><img src="bp.avif"></div>
+        <div><h1>Travel Partner</h1><img src="tp.avif"></div>
+        <div><h1>Snacking Partner</h1><img src="farm.avif"></div>
+        </div>
+        
+    </section>
     <section id="previou-partners">
+        <h1> Food Partners</h1>
         <div id="food-partners">
           <img src="ph.avif">
           <img src="gd.avif">
