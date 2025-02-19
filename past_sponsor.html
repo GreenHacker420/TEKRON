@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: grid;
+            justify-items: center;
+        }
         #food-partners{
             width: 100vw;
-            height: auto;
+            height: 300px;
             display: grid;
+            border-radius: 20px;
             grid-template-columns: repeat(5,1fr);
             /* grid-template-rows: repeat(1fr,3); */
             /* justify-content: center; */
@@ -44,14 +49,13 @@
             padding: 15px;
             border-radius: 10px;
         }
-        #Partners div h1{
-            justify-content: flex-start;
-            justify-items: flex-start;
-        }
+
+
 
     </style>
 </head>
 <body>
+    <h1>Past Partners</h1>
     <section id="partners">
         <div id="Partners">
         <div><h1>Internship Partner</h1><img src="AIESEC Logo.png"></div>
@@ -65,7 +69,7 @@
         
     </section>
     <section id="previou-partners">
-        <h1> Food Partners</h1>
+        <h1 style="text-align: center;"> Food Partners</h1>
         <div id="food-partners">
           <img src="ph.avif">
           <img src="gd.avif">
