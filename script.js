@@ -20,3 +20,10 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+var elem = document.getElementsByClassName("text-content");
+elem.remove();
+
+if (window.innerWidth < 768) {
+    document.getElementsByClassName("text-content").remove();
+}
