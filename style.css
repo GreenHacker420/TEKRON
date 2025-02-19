@@ -590,9 +590,3 @@ div img{
     }
 }
 
-@media (max-width: 768px) {
-    .text-content {
-        display: none;
-        /* grid-template-columns: repeat(1, 1fr); */
-    }
-}
