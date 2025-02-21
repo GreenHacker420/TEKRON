@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./robowar.css" />
+    <link rel="stylesheet" href="../../nav.css" />
+    <link rel="stylesheet" href="../podium.css" />
+    <link rel="stylesheet" href="../../footer.css">
+
+    <title>BattleVerse</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="
+      background-image: url(https://i.pinimg.com/originals/12/60/d5/1260d5851a0a6ac98d234be0ff1faeea.gif);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      color: aliceblue;
+      background-color: black;
+    ">
+    <nav class="navig">
+        <img id="logo1" src="../../Images/logo.png" alt="HashTech '25" height="50px" />
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+        <div class="nav-links">
+            <a class="link" href="/index.html">HOME</a>
+            <a class="link" href="#rules">RULEBOOK</a>
+            <!-- <a class="link" href="sponsors.html">SPONSORS</a> -->
+            <img id="logo" src="../../Images/logo.png" alt="TEKRON" height="50px" />
+            <!-- <a class="link" href="./nav_links/agenda.html">AGENDA</a> -->
+            <a class="link" href="#button">REGISTER</a>
+            <a class="link" href="#footer">CONTACT</a>
+        </div>
+    </nav>
+    <h1 class="name">BattleVerse</h1>
+    <div class="poster">
+        <img src="Robo War Poster.webp" alt="Robo Soccer Tournament Poster" />
+    </div>
+    <div class="podium">
+        <div class="second">
+            <div class="prize"><p>&#8377 45,000</p></div>
+        </div>
+        <div class="first">
+            <div class="prize"><p>&#8377 80,000</p></div>
+        </div>
+        <div class="third">
+            <div class="prize"><p>&#8377 25,000</p></div>
+        </div>
+    </div>
+
+    <button id="button"
+        class="group group-hover:before:duration-300 group-hover:after:duration-300 after:duration-300 hover:border-rose-200 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-300 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+        Register
+      </button>
+      </a>
+  
+
+    <section class="rules" id="rules">
+        <h1>EVENT STRUCTURE</h1>
+        <br />
+        <h2 class="text-xl font-bold">Eligibility</h2>
+        <ul>
+            <li>All students possessing a valid identity card from their respective educational institute are eligible to participate.</li>
+        </ul>
+
+        <h2>Robot Specifications</h2>
+        <h3>Weight & Dimensions</h3>
+        <ul class="list-disc pl-5 text-lg">
+            <li>Maximum Weight: 5 kg (with 5% tolerance)</li>
+            <li>Maximum Dimensions: 30 cm x 30 cm x 30 cm (L x W x H, including wheels)</li>
+        </ul>
+
+        <h2>Power Limit</h2>
+        <ul><li>Maximum 24V DC</li></ul>
+
+        <h2>Team Composition</h2>
+        <ul><li>Each team can have up to 6 participants</li>
+        <li>All members must be from the same educational institute.</li>
+        <li>Unique names required; offensive names may be rejected.</li></ul>
+
+        <h2>Connectivity</h2>
+        <ul><li>Both wired and wireless bots are allowed, but if wired the wire’s length can’t be more than 1.3 times of the arena's diagonal dimension</li></ul>
+
+        <h2>Prohibited Actions</h2>
+        <ul>
+            <li>No grippers or actuators that can harm opponents</li>
+            <li>No touching or damaging opponents’ wires</li>
+            <li>No allowing the ball to leave the arena</li>
+            <li>No human interference (touching the robot during the game)</li>
+        </ul>
+
+        <h2>Event Format</h2>
+        <ul>
+            <li>Knockout Matches: 2-minute halves</li>
+            <li>Quarterfinals & Semifinals: 3.5-minute halves</li>
+            <li>Finals: 5-minute halves</li>
+            <li>Game Start: Ball placed at center, robots begin at their goalposts</li>
+            <li>After a Goal: Ball is reset to center, robots return to goalposts</li>
+        </ul>
+
+        <h2>Gameplay & Scoring Rules</h2>
+        <ul>
+            <li>If a bot stops working, the opponent cannot score until it resumes</li>
+            <li>If a goal is scored while a bot is inactive, it is counted as a foul</li>
+            <li>If a bot remains inactive for 50 seconds, the match is awarded to the opponent</li>
+            <li>If both bots or the ball get stuck, the ball is reset to center, and bots return to goalposts</li>
+            <li>Attacking or damaging opponents' robots may result in disqualification</li>
+            <li>Point System:
+                <ul>
+                    <li>3 points per goal</li>
+                    <li>1st foul is excused, subsequent fouls result in 1-point deduction</li>
+                    <li>Winner is determined based on total points scored</li>
+                </ul>
+            </li>
+            <li>Team Participation:
+                <ul>
+                    <li>Up to 5 members per team</li>
+                    <li>Only 2 members in the arena at a time (1 operator, 1 for wires)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Match Rules</h2>
+        <ul>
+            <li>Pre-Match Inspection: Robots checked for safety compliance</li>
+            <li>Bots must not separate into multiple parts</li>
+            <li>Teams have 2 minutes before each half for adjustments</li>
+            <li>Repair Time:
+                <ul>
+                    <li>1 minute allowed without penalty</li>
+                    <li>Additional 1 minute with 1-point deduction</li>
+                    <li>If still immobile, the bot is disqualified</li>
+                </ul>
+            </li>
+            <li>Wire Entanglement:
+                <ul>
+                    <li>Match is paused, and the issue is resolved before resumption</li>
+                </ul>
+            </li>
+            <li>Pneumatics Allowed:
+                <ul>
+                    <li>Non-flammable pressurized gases, max 6 bar pressure</li>
+                    <li>Hydraulics NOT allowed</li>
+                </ul>
+            </li>
+            <li>Arena Damage by bots will lead to disqualification</li>
+        </ul>
+
+        <h2>Fouls</h2>
+        <ul>
+            <li>Incorrect positioning of bots</li>
+            <li> Lifting the ball off the ground</li>
+            <li>Deliberate ramming/damage to opponent</li>
+        </ul>
+
+        <h2>Arena Specifications</h2>
+        <ul>
+            <li>Dimensions : 12ft x 12ft x 6ft (l x b x h).</li>
+            <li>2 * 6 m ( shree metal ) . 6 * 19.5  210/kg</li>
+            <!-- <li>Side Wall Height: 8 cm</li> -->
+            <!-- <li>Penalty Box: 60 cm x 36 cm</li> -->
+            <!-- <li>Centre Circle Diameter: 60 cm</li> -->
+            <!-- <li>Surface: Plywood base with green carpet</li> -->
+            <!-- <li>Ball: Lightweight tennis ball</li> -->
+        </ul>
+
+        <h2>Competition Rounds</h2>
+        <ul>
+            <li>Checking Dimensions</li>
+            <li>Technical Inspection</li>
+            <li>Functionality Check</li>
+            <li>Arena Testing</li>
+        </ul>
+
+        <h2>Important Dates & Deadlines</h2>
+        <ul>
+            <li>Registration Deadline: February 25, 2025 (11:59 PM IST)</li>
+            <li>Video Submission Deadline: February 28, 2025 (11:59 PM IST)</li>
+            <li>Event Day: March 5, 2025 (9:30 AM IST)</li>
+            <li>Finals: March 5, 2025 (10:30 AM IST)</li>
+        </ul>
+
+        <h2>Prize Pool – ₹1,00,000</h2>
+        <ul>
+            <li>1st Prize – ₹ 80,000</li>
+            <li>2nd Prize – ₹ 45,000</li>
+            <li>3rd Prize – ₹ 25,000</li>
+        </ul>
+
+        <h2 class="text-xl font-bold">Note:</h2>
+        <ul class="list-disc pl-5 text-lg">
+            <li>
+                The organizers reserve the right to modify any of the existing rules
+                or introduce new ones if the situation requires it. Any changes made
+                will be communicated to all participating teams before the event
+                begins, ensuring everyone is informed in advance.
+            </li>
+            <li>
+                The decisions made by the event management are final and binding. In
+                the event of any disagreements or conflicts regarding the rules or the
+                competition, these will be resolved solely by the organizing team,
+                whose authority in this matter is unquestionable.
+            </li>
+            <li>
+                Additionally, all participating teams must submit their robots to the
+                management team at least 5 minutes before their scheduled match begins.
+                This allows the management to conduct necessary checks and ensure
+                everything is in order for the competition to proceed smoothly.
+            </li>
+        </ul>
+
+        <h2>Contact the Organizers</h2>
+        <ul>
+            <li>Sandesh Lendve- 9653496031</li>
+            <li>Jatin Bisen - 7558294825</li>
+            <!-- <li>Vansh Agarwal - 9411068533</li> -->
+        </ul>
+        
+    </section>
+
+    <footer id="footer">
+        <div class="footer">
+          <div class="footer-logo">
+            <img src="Images/logo.png" alt="TEKRON" class="about-logo" />
+          </div>
+    
+          <div class="footer-contacts">
+            <h3>Contact Us</h3>
+            <p>Email: tekronfest@newtonschool.co</p>
+            <p>Address: Lohegaon Pune</p>
+          </div>
+        <div class="bottom">&copy; 2025 <a href="index.html">Tekron</a>. All Rights Reserved.</div>
+      </footer>
+</body>
+
+</html>
