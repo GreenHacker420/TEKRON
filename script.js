@@ -43,9 +43,9 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// if (window.innerWidth < 768) {
-//     var elems = document.getElementsByClassName("text-content");
-//     Array.from(elems).forEach(function (elem) {
-//         elem.remove();
-//     });
-// }
+if (window.innerWidth < 768) {
+    var elems = document.getElementsByClassName("container");
+    Array.from(elems).forEach(function (elem) {
+        elem.remove();
+    });
+}

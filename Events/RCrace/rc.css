@@ -33,6 +33,7 @@ body{
     margin: auto;
     padding: 20px;
     font-family:font;
+    padding: 50px;
 }
 
 p{
@@ -74,4 +75,10 @@ li{
     transition: color 0.3s ease;
     margin-top: 10px;
     display: inline-block;
+}
+
+#logo1{
+    width: 10vh;
+    height: 50px;
+    margin-top: 20px;
 }
