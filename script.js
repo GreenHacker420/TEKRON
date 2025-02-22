@@ -1,6 +1,24 @@
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector("#menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("change", function () {
+        if (this.checked) {
+            navLinks.classList.add("active");
+        } else {
+            navLinks.classList.remove("active");
+        }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuToggle.checked = false; // Uncheck checkbox to close menu
+            navLinks.classList.remove("active");
+        });
+    });
+});
+
 
 function updateCountdown() {
     const eventDate = new Date("March 5, 2025 00:00:00").getTime();
@@ -21,9 +39,9 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-var elem = document.getElementsByClassName("text-content");
-elem.remove();
-
-if (window.innerWidth < 768) {
-    document.getElementsByClassName("text-content").remove();
-}
+// if (window.innerWidth < 768) {
+//     var elems = document.getElementsByClassName("text-content");
+//     Array.from(elems).forEach(function (elem) {
+//         elem.remove();
+//     });
+// }
