@@ -11,6 +11,7 @@ nav {
     z-index: 1000;
 }
 
+
 /* Default hidden checkbox */
 #menu-toggle {
     display: none;
@@ -77,7 +78,6 @@ nav {
 .nav-links a:hover::after {
     width: 100%;
 }
-
 /* ---------- Responsive (Mobile) ---------- */
 @media (max-width: 990px) {
     .hamburger {
@@ -99,7 +99,8 @@ nav {
         text-align: center;
         opacity: 0;
         visibility: hidden;
-        transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth animation */
+        transform: translateY(-100%);
         z-index: 999;
         padding-top: 60px;
     }
@@ -122,12 +123,30 @@ nav {
         top: 0;
         opacity: 1;
         visibility: visible;
+        transform: translateY(0); /* Smooth slide-in effect */
+    }
+
+    /* Close Button */
+    .close-btn {
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .close-btn:hover {
+        transform: scale(1.2);
     }
 
     #logo {
         display: none;  /* Hide main logo on mobile */
     }
 }
+
+
 
 /* ---------- Large Screens ---------- */
 @media (min-width: 991px) {
@@ -140,6 +159,10 @@ nav {
     }
 
     .hamburger {
+        display: none;
+    }
+
+    .close-btn {
         display: none;
     }
 }

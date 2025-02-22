@@ -122,7 +122,7 @@
     line-height: 1.8;
     color: #bfbfbf;
     font-family: font;
-    background: rgba(0, 0, 0, 0.50); /* Transparent Black Background */
+    background: rgba(131, 131, 131, 0.25); /* Transparent Black Background */
     border-radius: 10px; /* Rounded Corners */
     padding: 10px;
 }
@@ -169,6 +169,7 @@
     .text-content {
         flex: 1;
         padding: 20px;
+        background: rgba(0, 0, 0, 0.6); /* Slightly Darker for Smaller Screens */
     }
 
     #about {
@@ -177,7 +178,6 @@
 
     .About {
         font-size: 1rem; /* Adjust text size */
-        background: rgba(0, 0, 0, 0.6); /* Slightly Darker for Smaller Screens */
     }
 
     .image-container img {

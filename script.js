@@ -1,23 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector("#menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    const menuIcon = document.querySelector("#menu-icon");
+    const navLinks = document.querySelector("#nav-links");
+    const closeBtn = document.querySelector("#close-btn");
 
-    menuToggle.addEventListener("change", function () {
-        if (this.checked) {
-            navLinks.classList.add("active");
-        } else {
-            navLinks.classList.remove("active");
-        }
+    // Open menu
+    menuIcon.addEventListener("click", function () {
+        navLinks.classList.add("active");
+    });
+
+    // Close menu
+    closeBtn.addEventListener("click", function () {
+        navLinks.classList.remove("active");
     });
 
     // Close menu when clicking a link
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
-            menuToggle.checked = false; // Uncheck checkbox to close menu
             navLinks.classList.remove("active");
         });
     });
 });
+
+
 
 
 function updateCountdown() {
