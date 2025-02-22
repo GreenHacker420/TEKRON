@@ -65,3 +65,12 @@ li{
     border-radius: 20px;
 }
 
+
+.mail_anchor{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}

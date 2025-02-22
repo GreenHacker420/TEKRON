@@ -82,3 +82,12 @@ h1{
     margin-top: 30px;
     font-size: 25px;
 }
+
+.mail_anchor{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}
