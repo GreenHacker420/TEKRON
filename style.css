@@ -749,7 +749,7 @@
     line-height: 1.8;
     color: #bfbfbf;
     font-family: font;
-    background: rgba(131, 131, 131, 0.25); /* Transparent Black Background */
+    background: rgba(0, 0, 0, 0.508); /* Transparent Black Background */
     border-radius: 10px; /* Rounded Corners */
     padding: 10px;
 }
