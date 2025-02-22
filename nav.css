@@ -6,9 +6,12 @@ nav {
     padding: 10px 20px;
     font-family: 'Axiforma', sans-serif;
     background-color: transparent;
-    width: 100%;
+    width: 50%;
     position: relative;
     z-index: 1000;
+    /* border: 1px solid;
+
+    border-radius: 50%; */
 }
 
 
@@ -87,6 +90,9 @@ nav {
     #logo1 {
         display: block;  /* Show mobile logo */
     }
+    .nav{
+        border: none;
+    }
 
     .nav-links {
         display: flex;
@@ -147,6 +153,187 @@ nav {
 }
 
 
+
+/* ---------- Large Screens ---------- */
+@media (min-width: 991px) {
+    .nav-links {
+        display: flex !important;
+        position: static;
+        opacity: 1;
+        background: transparent;
+        width: auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .close-btn {
+        display: none;
+    }
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center; /* Center navbar */
+    align-items: center;
+    padding: 10px 40px;
+    font-family: 'Axiforma', sans-serif;
+    background-color: transparent;
+    width: fit-content; /* Fit only the content */
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    z-index: 1000;
+    /* border: 2px solid white; Border setup */
+    /* border-image: 1px solid white; */
+    /* box-shadow: 2px 2px 10px rgba(255, 217, 0, 0.642); /* Add golden shadow */
+    /* border-radius: 50px; Oval Shape */
+
+}
+
+/* Hide mobile logo by default */
+#logo1 {
+    display: none;
+}
+
+/* Default hidden checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+}
+
+/* SEARCH BAR */
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    width: 150px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    width: 200px;
+    border-color: #ff4a4a;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+/* ---------- Responsive (Mobile) ---------- */
+@media (max-width: 990px) {
+    nav {
+        width: 100%; /* Full width */
+        justify-content: space-between;
+        border: none; /* Remove borders */
+        padding: 15px 20px; /* Add spacing */
+        border: none;
+        box-shadow: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #logo1 {
+        display: block; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transform: translateY(-100%);
+        z-index: 999;
+        padding-top: 60px;
+    }
+
+    .nav-links.active {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Remove borders and add space */
+    .nav-links a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+        color: white;
+        font-family: 'Axiforma', sans-serif;
+        font-weight: 500;
+    }
+
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Close Button */
+    .close-btn {
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .close-btn:hover {
+        transform: scale(1.2);
+    }
+
+    /* Adjust search bar */
+    .search-input {
+        width: 100px;
+    }
+
+    .search-input:focus {
+        width: 150px;
+    }
+}
 
 /* ---------- Large Screens ---------- */
 @media (min-width: 991px) {
