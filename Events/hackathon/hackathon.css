@@ -74,3 +74,24 @@ li{
     margin-top: 10px;
     display: inline-block;
 }
+
+@media (max-width: 1024px) {
+    .poster {
+        width: 85vw;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .poster {
+        width: 90vw;
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .poster {
+        width: 95vw;
+        height: 200px;
+    }
+}

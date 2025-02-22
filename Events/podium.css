@@ -62,9 +62,7 @@
 @media (max-width: 768px) {
     .podium {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
     }
 
     .first, .second, .third {
@@ -72,6 +70,14 @@
         height: 180px;
     }
 }
+
+@media (max-width: 480px) {
+    .first, .second, .third {
+        width: 150px;
+        height: 150px;
+    }
+}
+
 
 .prize p{
     position: relative;
@@ -108,26 +114,25 @@
 /* Medium screens */
 @media (max-width: 1024px) {
     .poster {
-        width: 90vw;
-        height: 400px;
+        width: 85vw;
+        height: 350px;
     }
 }
 
-/* Small screens */
 @media (max-width: 768px) {
     .poster {
-        width: 80vw;
-        height: 300px;
+        width: 90vw;
+        height: 280px;
     }
 }
 
-/* Extra small screens */
 @media (max-width: 480px) {
     .poster {
-        width: 80vw;
+        width: 95vw;
         height: 200px;
     }
 }
+
 
 .poster img {
     width: 100%;
