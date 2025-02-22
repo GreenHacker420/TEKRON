@@ -745,13 +745,14 @@
 }
 
 .About {
+    margin-top: 30px;
     font-size: 1.2rem;
     line-height: 1.8;
     color: #bfbfbf;
     font-family: font;
     background: rgba(0, 0, 0, 0.508); /* Transparent Black Background */
     border-radius: 10px; /* Rounded Corners */
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Image Container */
