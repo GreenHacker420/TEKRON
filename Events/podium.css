@@ -190,14 +190,16 @@ footer{
 
 
 
-@media screen and (max-width: 768px){
-    #rules{
+@media screen and (max-width: 768px) {
+    #rules {
         width: 90% !important;
     }
-    .rules{
+    .rules {
         display: none;
     }
-    
+    .rulesmob {
+        display: block !important; /* Ensure visibility */
+    }
 }
 
 .rulesmob ul{
@@ -238,6 +240,7 @@ footer{
     margin-top: 50px;
     font-family: font;
     padding: 30px;
+    display: none;
 }
 .rulesmob h2{
     font-family: tekron;
