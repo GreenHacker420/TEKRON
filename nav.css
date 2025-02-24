@@ -1,5 +1,6 @@
 /* NAVBAR */
 nav {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +10,9 @@ nav {
     width: 50%;
     position: relative;
     z-index: 1000;
-    /* border: 1px solid;
-
-    border-radius: 50%; */
+    border-bottom: 1px solid;
+    border-radius: 10px;
+    overflow:visible;
 }
 
 
