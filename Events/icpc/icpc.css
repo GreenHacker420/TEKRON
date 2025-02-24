@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: tekron;
-    src: url(/fonts/Orbitron-VariableFont_wght.ttf)
+    src: url(../../fonts/Orbitron-VariableFont_wght.ttf)
 }
 
 .name{
@@ -74,4 +74,23 @@ li{
     transition: color 0.3s ease;
     margin-top: 10px;
     display: inline-block;
+}
+
+.rules h2{
+    font-family: tekron;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.rules h2 ~ p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.round1{
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+
+#logo1{
+    width: 60px;
+    height: 50px;
 }
