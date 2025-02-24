@@ -22,6 +22,12 @@ html{
     background: transparent;
 }
 
+@media screen and (max-width: 768px){
+    #rules{
+        width: 90% !important;
+    }
+}
+
 body{
     display: flex;
     flex-direction: column;

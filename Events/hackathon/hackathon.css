@@ -35,6 +35,12 @@ body{
     font-family:font;
 }
 
+@media screen and (max-width: 768px){
+    #rules{
+        width: 90% !important;
+    }
+}
+
 p{
     font-size: 20px;
 }
