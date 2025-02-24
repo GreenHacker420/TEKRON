@@ -315,15 +315,7 @@
             left: calc(var(--width) * -1);
         }
     }
-    
-    /* .slider:hover .item{
-        animation-play-state: paused!important;
-        filter: grayscale(1);
-    }
-    
-    .slider .item:hover{
-        filter: grayscale(0);
-    } */
+
     
     .slider[reverse="true"] .item {
         animation: reversePlay 15s linear infinite;
@@ -362,8 +354,8 @@
     /* Responsive Grid for Cards */
     #gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ensures equal-sized cards */
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures equal-sized cards */
+        gap: 30px;
         padding: 20px;
         width: 90%;
         max-width: 1200px;
@@ -375,6 +367,7 @@
     /* Card Styling */
     .card {
         width: 100%;
+        height: 200px; /* Reduced height */
         border-radius: 10px;
         position: relative;
         overflow: hidden;
@@ -382,11 +375,13 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         background-color: #1c1c1c;
         transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px; /* Added space between cards */
     }
     
     .card:hover {
-        transform: scale(1.03);
+        transform: scale(1.05);
     }
+
     /* Image Box */
     .card .image-box {
         width: 100%;
@@ -519,7 +514,7 @@
     /* Responsive Adjustments */
     @media (max-width: 768px) {
         #gallery {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         }
     
         .content h2 {
@@ -1122,9 +1117,6 @@ div img{
 
 
 
-
-
-
 #GALLERY{
     text-align: center;
     margin-top: 9rem;
@@ -1231,7 +1223,7 @@ div img{
     .gallery {
         --width: 300px;
         --height: 220px;
-        --gap: 15px;
+        --gap: 20px;
         --speed: 25s;
     }
 }
@@ -1240,7 +1232,7 @@ div img{
     .gallery {
         --width: 250px;
         --height: 180px;
-        --gap: 10px;
+        --gap: 15px;
         --speed: 30s;
     }
 }
@@ -1249,7 +1241,39 @@ div img{
     .gallery {
         --width: 200px;
         --height: 150px;
-        --gap: 5px;
+        --gap: 10px;
         --speed: 35s;
+    }
+}
+
+.phone_info {
+    text-align: center;
+    font-size: 2rem;
+    font-family: font;
+    animation: bounce 2s infinite;
+    display: none; /* Hide by default */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .phone_info {
+        display: block; /* Show on phones */
     }
 }
