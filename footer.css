@@ -1,90 +1,87 @@
 /* Footer Styling */
 #footer {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Left Section: Logo & Contact */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  min-width: 250px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-contacts {
+  margin-top: 10px;
+}
+
+/* Right Section: Map */
+.footer-right {
+  flex: 1;
+  text-align: right;
+  min-width: 400px;
+}
+
+.footer-right iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+}
+
+/* Bottom Footer */
+.bottom {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  /* Footer Logo - Left */
-  .footer-logo {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .footer-logo img {
-    max-width: 150px;
-    height: auto;
-  }
-  
-  /* Footer Links - Center */
-  .footer-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links a:hover {
-    color: #ffcc00;
-  }
-  
-  /* Footer Contacts - Right */
-  .footer-contacts {
-    flex: 1;
-    text-align: right;
-    min-width: 250px;
-  }
-  
-  /* Bottom Footer */
-  .bottom {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 14px;
-    opacity: 0.8;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .footer-logo, .footer-links, .footer-contacts {
-      text-align: center;
-      flex: unset;
-      margin-bottom: 10px;
-    }
-  
-    .footer-links {
-      flex-direction: column;
-      gap: 10px;
-    }
   }
 
-.mail_anchor{
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    margin-top: 10px;
-    display: inline-block;
+  .footer-left, .footer-right {
+      text-align: center;
+      flex: unset;
+      width: 100%;
+  }
+  .footer-contacts{
+    text-align: center;
+  }
+  .footer-right iframe {
+      max-width: 90vw;
+      height: 250px;
+  }
+}
+
+/* Mail Styling */
+.mail_anchor {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  margin-top: 10px;
+  display: inline-block;
 }
