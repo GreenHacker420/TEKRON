@@ -1,39 +1,40 @@
 @font-face {
     font-family: font;
-    src: url(../../fonts/VarelaRound-Regular.ttf)
+    src: url(../../fonts/VarelaRound-Regular.ttf);
 }
 @font-face {
     font-family: tekron;
-    src: url(../../fonts/Orbitron-VariableFont_wght.ttf)
+    src: url(../../fonts/Orbitron-VariableFont_wght.ttf);
 }
-html{
+html {
     background-image: url(../background.png);
     background-attachment: fixed;
 }
-*{
+* {
     background-color: whitesmoke;
     background: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.name{
+
+
+.name {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: tekron;
     margin: 20px;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-a{
+
+a {
     text-decoration: none;
 }
 
-#rules{
-    width: 60% !important; 
+#rules {
+    width: 80%;
     margin: auto;
-    padding: 50px;
-    font-family:font;
+    padding: 30px;
+    font-family: font;
 }
 
 ul {
@@ -42,48 +43,51 @@ ul {
     margin-left: 20px !important;
 }
 
-
-li{
-    font-size: 20px;
+li {
+    font-size: 18px;
 }
 
-.poster{
+.poster {
     background-color: red;
-    width:60vw;
-    height: 400px;
+    width: 70vw;
+    max-width: 600px;
+    height: auto;
     border-radius: 20px;
     margin-bottom: 2rem;
+    border: 5px solid white;
 }
-h1{
-    font-size: 50px;
+
+h1 {
+    font-size: 40px;
     margin-top: 20px;
     font-family: tekron;
-    justify-self: center;
+    text-align: center;
 }
-.poster img{
+
+.poster img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
-.rules h2{
+.rules h2 {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 26px;
 }
 
-.rules h1{
-    font-size: 50px;
+.rules h1 {
+    font-size: 40px;
     margin-top: 20px;
     font-family: tekron;
-    justify-self: center;
+    text-align: center;
 }
 
-.rules h3{
+.rules h3 {
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
-.mail_anchor{
+.mail_anchor {
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -92,31 +96,48 @@ h1{
     display: inline-block;
 }
 
-
 @media (max-width: 1024px) {
-    .poster img {
+    .poster {
         width: 85vw;
-        height: 350px;
     }
 }
 
 @media (max-width: 768px) {
-    .poster img{
+    .poster {
         width: 90vw;
-        height: 280px;
+        border: 4px solid white;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    #rules {
+        width: 90vw;
+        font-size: 1rem;
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .poster img{
+    .poster {
         width: 95vw;
-        height: 200px;
+        border: 3px solid white;
     }
-}
-
-
-.poster img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    .name {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .rules h2 {
+        font-size: 22px;
+    }
+    .rules h3 {
+        font-size: 20px;
+    }
+    li {
+        font-size: 16px;
+    }
 }

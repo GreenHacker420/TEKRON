@@ -96,5 +96,11 @@ li{
 #logo1{
     width: 100vh;
     height:50px;
-    
+
+}
+
+@media screen and (max-width: 768px){
+    #rules{
+        width: 90% !important;
+    }
 }
