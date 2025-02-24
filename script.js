@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+if (window.innerWidth < 768) {
+    var elems = document.getElementsByClassName("container");
+    Array.from(elems).forEach(function (elem) {
+        elem.remove();
+    });
+}
 
 
 
@@ -43,9 +49,3 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-if (window.innerWidth < 768) {
-    var elems = document.getElementsByClassName("container");
-    Array.from(elems).forEach(function (elem) {
-        elem.remove();
-    });
-}
