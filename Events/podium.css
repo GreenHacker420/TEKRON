@@ -194,5 +194,68 @@ footer{
     #rules{
         width: 90% !important;
     }
+    .rules{
+        display: none;
+    }
     
 }
+
+.rulesmob ul{
+    margin-top: 10px;
+}
+.rulesmob h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.rulesmob h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: tekron;
+    justify-self: center;
+}
+
+.rulesmob h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.rulesmob h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: tekron;
+    justify-self: center;
+}
+
+.rulesmob h3{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.rulesmob {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(98, 98, 98, 0.435);
+    margin-top: 50px;
+    font-family: font;
+    padding: 30px;
+}
+.rulesmob h2{
+    font-family: tekron;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.rulesmob h2 ~ p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.rulesmob .roundmob{
+    background-color: rgba(0, 0, 0, 0.318);
+    font-size: 5000px;
+    padding: 20px;
+    border-radius: 2px;
+}
+.rulesmob .roundmob p{
+    margin: 10px 0px;
+}
+
