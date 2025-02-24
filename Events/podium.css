@@ -262,3 +262,21 @@ footer{
     margin: 10px 0px;
 }
 
+@media screen and (max-width: 768px) {
+    .rulesmob {
+        font-size: 4vw;
+        padding: 3vw; 
+    }
+    
+    .rulesmob h1 {
+        font-size: 6vw; 
+    }
+
+    .rulesmob h2 {
+        font-size: 5vw;  
+    }
+
+    .rulesmob p {
+        font-size: 3.5vw;  
+    }
+}
