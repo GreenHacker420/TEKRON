@@ -104,3 +104,50 @@ li{
         width: 90% !important;
     }
 }
+
+#contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between text and image */
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#contact {
+    flex: 1;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+#contact h1 {
+    font-weight: bold;
+    font-family: TEKRON;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+#contact h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.mail_anchor p {
+    font-size: 1.2rem;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+#contsct-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#contsct-img img {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    height: auto;
+}
