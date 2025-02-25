@@ -136,3 +136,12 @@ h1{
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .rulesmob {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+    }
+}
