@@ -103,13 +103,12 @@
     transform: scale(1.1);
 }
 
-/* .poster {
-    background-color: red;
-    width: 60vw;
+.poster {
+    background-color: red; 
+    width: 70vw;
     height: 500px;
     border-radius: 20px;
     margin-bottom: 2rem;
-    transition: all 0.3s ease-in-out;
 }
 
 /* Medium screens */
@@ -134,7 +133,10 @@
     }
 }
 
-
+#rules{
+    margin-top: 50px;
+    width: 110vh !important;
+}
 .poster img {
     width: 100%;
     height: 100%;
@@ -190,10 +192,7 @@ footer{
 
 
 
-@media screen and (max-width: 768px) {
-    #rules {
-        width: 90% !important;
-    }
+@media screen and (max-width: 1024px) {
     .rules {
         display: none;
     }
@@ -265,7 +264,7 @@ footer{
     margin: 10px 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .rulesmob {
         font-size: 4vw;
         padding: 3vw; 
