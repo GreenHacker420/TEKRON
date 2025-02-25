@@ -101,6 +101,8 @@ li{
     padding: 50px;
     max-width: 1200px;
     margin: auto;
+    background-color: rgba(120, 120, 120, 0.281);
+    border-radius: 30px;
 }
 
 #contact {
