@@ -282,3 +282,7 @@ footer{
         font-size: 3.5vw;  
     }
 }
+
+html {
+    scroll-behavior: smooth;
+  }
