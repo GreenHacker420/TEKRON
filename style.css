@@ -292,7 +292,7 @@
         position: relative;
     }
     
-    .slider .list .item {
+    .slider .list .item{
         width: var(--width);
         height: var(--height);
         position: absolute;
