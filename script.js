@@ -42,7 +42,7 @@ function updateCountdown() {
         const seconds = String(Math.floor((timeLeft % (1000 * 60)) / 1000)).padStart(2, '0');
         document.getElementById("countdown").innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
     } else {
-        document.getElementById("countdown").innerHTML = "Event Started!";
+        document.getElementById("countdown").innerHTML = "Event Ended!";
     }
 }
 
